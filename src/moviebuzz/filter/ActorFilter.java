@@ -62,6 +62,13 @@ public class ActorFilter implements MovieFilter {
 						}
 					}
 				}
+				
+				if(found){
+					// if the flag is on, and we encounter movie details related to a new actor, switch off the flag. 
+					
+					Pattern actorsMoviesListEnds = Pattern.compile("()");
+					
+				}
 			}
 			myScanner.close();
 		} catch (FileNotFoundException e) {
